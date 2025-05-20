@@ -21,7 +21,3 @@ body {
   color: var(--color-primary);
   line-height: 1.6;
 }
-/* PRUEBA: fondo llamativo para verificar carga */
-body {
-  background-color: hotpink !important;
-}
