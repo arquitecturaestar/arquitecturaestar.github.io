@@ -52,7 +52,7 @@ nav a:hover {
 }
 /* HERO */
 .hero {
-  background: url('/assets/img/hero.jpg') center/cover no-repeat;
+  background: url('https://source.unsplash.com/1600x900/?architecture') center/cover no-repeat;
   height: 80vh;
   display: flex;
   align-items: center;
@@ -61,37 +61,27 @@ nav a:hover {
   position: relative;
   color: white;
 }
-
 .hero::after {
-  /* Capa semitransparente para mejorar legibilidad */
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0,0,0,0.4);
-  z-index: 1;
 }
-
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   max-width: 600px;
   padding: 0 1rem;
 }
-
 .hero-content h2 {
   font-family: var(--font-heading);
   font-size: 2.5rem;
   margin-bottom: .75rem;
 }
-
 .hero-content p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
-
 .btn {
   display: inline-block;
   background: var(--color-accent);
@@ -102,6 +92,10 @@ nav a:hover {
   font-weight: 600;
   transition: background .3s ease;
 }
+.btn:hover {
+  background: var(--color-primary);
+}
+
 
 .btn:hover {
   background: var(--color-primary);
