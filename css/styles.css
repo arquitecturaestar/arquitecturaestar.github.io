@@ -15,7 +15,12 @@
 
 html { scroll-behavior: smooth; }
 
-
+body {
+  font-family: var(--font-sans);
+  background: var(--color-light);
+  color: var(--color-primary);
+  line-height: 1.6;
+}
 /* PRUEBA: fondo llamativo para verificar carga */
 body {
   background-color: hotpink !important;
