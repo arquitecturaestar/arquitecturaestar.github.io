@@ -157,3 +157,26 @@ nav a:hover {
 .footer-content a:hover {
   color: var(--color-primary);
 }
+/* FOOTER */
+.footer {
+  background: #222;
+  color: #eee;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: .5rem 0;
+  font-size: .95rem;
+}
+
+.footer-content a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color .2s;
+}
+
+.footer-content a:hover {
+  color: var(--color-primary);
+}
