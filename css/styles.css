@@ -34,14 +34,12 @@ header {
   justify-content: space-between;
 }
 
-/* Logo / título */
 header h1 {
   font-family: var(--font-heading);
   font-size: 1.75rem;
   color: var(--color-primary);
 }
 
-/* Navegación */
 nav a {
   margin-left: 1.5rem;
   text-decoration: none;
@@ -49,7 +47,6 @@ nav a {
   color: var(--color-gray);
   transition: color .2s;
 }
-
 nav a:hover {
   color: var(--color-primary);
 }
