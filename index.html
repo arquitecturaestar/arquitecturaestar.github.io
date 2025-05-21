@@ -155,6 +155,19 @@
   position: relative;
   z-index: 2;
 }
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.hero.fade-out::before {
+  opacity: 0;
+}
 
   </style>
   
@@ -245,23 +258,29 @@ Diseñamos y adaptamos cada proyecto con criterio y sensibilidad, creando entorn
     const links = document.querySelector('.nav-links');
     toggle.addEventListener('click', () => links.classList.toggle('active'));
   </script>
-  <script>
+ <script>
   const hero = document.querySelector('.hero');
   const images = [
     'assets/img/hero1.jpg',
     'assets/img/hero2.jpg',
-    'assets/img/hero3.jpg'
+    'assets/img/hero3.jpg' // asegurate de que exista
   ];
   let index = 0;
 
   function changeHeroBackground() {
-    hero.style.backgroundImage = `url('${images[index]}')`;
-    index = (index + 1) % images.length;
+    hero.classList.add('fade-out');
+
+    setTimeout(() => {
+      hero.style.backgroundImage = `url('${images[index]}')`;
+      hero.classList.remove('fade-out');
+      index = (index + 1) % images.length;
+    }, 1000); // mismo que el tiempo de transición CSS
   }
 
-  changeHeroBackground(); // mostrar la primera
-  setInterval(changeHeroBackground, 5000); // cambia cada 5 segundos
+  changeHeroBackground();
+  setInterval(changeHeroBackground, 5000);
 </script>
+
 
 </body>
 </html>
