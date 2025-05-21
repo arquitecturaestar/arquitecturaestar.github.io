@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyecto Yacan 1 | EstAr</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body { font-family: Helvetica, sans-serif; margin: 0; color: #333; }
+    header { padding: 1rem 2rem; background: #f5f5f5; font-size: 1.2rem; }
+    .hero { background: url('../assets/img/portada.jpg') center/cover no-repeat; height: 60vh; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.7); font-size: 2.5rem; }
+    .slider { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 1rem; padding: 2rem; }
+    .slider img { height: 300px; border-radius: 10px; scroll-snap-align: center; flex-shrink: 0; }
+    .memoria { padding: 2rem; max-width: 800px; margin: auto; line-height: 1.6; }
+    .memoria h2 { margin-top: 2rem; font-size: 1.8rem; }
+    .volver { display: block; text-align: center; margin: 3rem 0; color: #555; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>EstAr | Proyecto Yacan 1</header>
+
+  <div class="hero">
+    Proyecto Yacan 1
+  </div>
+
+  <section class="slider">
+    <img src="../assets/img/img1.jpg" alt="Imagen 1">
+    <img src="../assets/img/img2.jpg" alt="Imagen 2">
+    <img src="../assets/img/img3.jpg" alt="Imagen 3">
+  </section>
+
+  <section class="memoria">
+    <h2>Memoria descriptiva</h2>
+    <p>
+      Proyecto ubicado en el entorno rural de Yacanto. El diseño responde a las condiciones del terreno, el viento predominante y las vistas hacia el oeste.
+    </p>
+    <h2>Datos técnicos</h2>
+    <ul>
+      <li>Ubicación: Yacanto, Córdoba</li>
+      <li>Superficie: — m²</li>
+      <li>Materialidad: —</li>
+      <li>Año: —</li>
+    </ul>
+  </section>
+
+  <a href="../index.html#projects" class="volver">← Volver a proyectos</a>
+
+</body>
+</html>
