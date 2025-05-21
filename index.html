@@ -75,14 +75,18 @@
 
     /* Hero full-screen */
     .hero {
-      height: 100vh;
-      background: url('img/hero.jpg') center/cover no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      margin-top: 70px; /* alto aproximado de nav */
-    }
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 70px;
+  transition: background-image 1s ease-in-out;
+}
+
     .hero::before {
       content: '';
       position: absolute;
@@ -241,5 +245,23 @@ Diseñamos y adaptamos cada proyecto con criterio y sensibilidad, creando entorn
     const links = document.querySelector('.nav-links');
     toggle.addEventListener('click', () => links.classList.toggle('active'));
   </script>
+  <script>
+  const hero = document.querySelector('.hero');
+  const images = [
+    'assets/img/hero1.jpg',
+    'assets/img/hero2.jpg',
+    'assets/img/hero3.jpg'
+  ];
+  let index = 0;
+
+  function changeHeroBackground() {
+    hero.style.backgroundImage = `url('${images[index]}')`;
+    index = (index + 1) % images.length;
+  }
+
+  changeHeroBackground(); // mostrar la primera
+  setInterval(changeHeroBackground, 5000); // cambia cada 5 segundos
+</script>
+
 </body>
 </html>
