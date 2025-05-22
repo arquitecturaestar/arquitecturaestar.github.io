@@ -137,16 +137,15 @@
       .nav-toggle { display: block; }
     }
  .about-section {
-  background: url('assets/img/quienes.png') center/cover no-repeat;
+  height: 100vh;
+  background: url('assets/img/quienes.png') center/cover no-repeat fixed;
   position: relative;
-  color: white;
-  min-height: 120vh;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: flex-end;
+  padding: 0 2rem 6rem;
+  color: white;
 }
+
 
 }
 
@@ -155,7 +154,7 @@
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* oscurece para contraste */
+  background: rgba(0, 0, 0, 0.6); /* oscurece para contraste */
   z-index: 1;
 }
 
