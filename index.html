@@ -243,6 +243,41 @@
 .bubble:hover {
   transform: scale(1.08) translateY(-8px);
 }
+  /* Footer – redes sociales */
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color .2s;
+}
+
+.social-link img {
+  width: 24px;
+  height: 24px;
+  margin-right: .5rem;
+}
+
+.social-link:hover {
+  color: var(--color-primary);
+}
+
+.social-qr {
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
 
 
   </style>
@@ -304,11 +339,22 @@ Diseñamos y adaptamos cada proyecto con criterio y sensibilidad, creando entorn
   </div>
 </section>
 
-  <!-- Sección Contacto -->
+   <!-- Sección Contacto -->
   <footer id="contact">
     <h2>Contacto</h2>
-    <p>Email: arquitectura.est.ar@gmail.com| Tel: +54 9 351 6317892</p>
+    <p>Email: arquitectura.est.ar@gmail.com | Tel: +54 9 351 6317892</p>
+
+    <!-- ← Aquí empieza el bloque de redes -->
+    <div class="footer-social">
+      <a href="https://instagram.com/est.ar.estudio" target="_blank" class="social-link">
+        <img src="/assets/img/instagram-icon.svg" alt="Instagram" />
+        @est.ar.estudio
+      </a>
+      <img src="/assets/img/instagram-qr.png" alt="QR Instagram" class="social-qr" />
+    </div>
+    <!-- → Y aquí termina -->
   </footer>
+
 
   <!-- JavaScript para scroll suave y toggle menu -->
   <script>
